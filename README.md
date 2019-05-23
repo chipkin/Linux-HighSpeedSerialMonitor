@@ -1,21 +1,21 @@
-# Linux-High Speed Serial Monitor
+# Linux High Speed Serial Monitor
 
 A Linux serial port application that shows the time between received bytes in milliseconds and nanoseconds.
 
-This tool was orginally designed to test and validate the callback functions for the CAS BACnet MSTP Stack on custom hardware. We have found the tool to be useful for detecting interbyte timeouts in serial portcols comunications.
+This tool was orginally designed to test and validate the callback functions for the CAS BACnet MSTP Stack on custom hardware. We have found the tool to be useful for detecting interbyte timeouts in serial protocol communications.
 
 ## Command line arguments
 
 ```txt
- serialMonitor <port = /dev/ttyS1> <baudrate = 38400>
- <port>     - The TTY serial port that this application will monitor. Default: /dev/ttyS1
- <baudrate> - The baud rate of the TTY serial port Default: 38400
+serialMonitor <port> <baudrate>
+   <port>     - The TTY serial port that this application will monitor. Default: /dev/ttyS1
+   <baudrate> - The baud rate of the TTY serial port. Default: 38400
 
 Examples:
- serialMonitor /dev/ttyS1 38400
- serialMonitor /dev/ttyS2
- serialMonitor /dev/ttyS3 9600
- ```
+   serialMonitor /dev/ttyS1 38400
+   serialMonitor /dev/ttyS2
+   serialMonitor /dev/ttyS3 9600
+```
 
 ## Example output
 
