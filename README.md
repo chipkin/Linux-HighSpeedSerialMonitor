@@ -45,6 +45,12 @@ FYI: Connected to serial port
 
 A included [makefile](https://github.com/chipkin/Linux-HighSpeedSerialMonitor/blob/master/makefile) can be built with [GCC](https://gcc.gnu.org/)
 
+```bash
+make all
+```
+
+This project also auto built using [Gitlab CI](https://docs.gitlab.com/ee/ci/) on every commit.
+
 ## Binary
 
 A compiled version of the serial monitor is included in this repo. [serialMonitor](https://github.com/chipkin/Linux-HighSpeedSerialMonitor/blob/master/serialMonitor)
@@ -53,4 +59,5 @@ A compiled version of the serial monitor is included in this repo. [serialMonito
 
 ### 2019 May 23
 
-- 0.0.0.1 Initial version
+- 0.0.2 Added CI build number. Updated make file to include "all", and "Clean" steps. Added Gitlab CI auto builds.
+- 0.0.1 Initial version

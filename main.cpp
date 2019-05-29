@@ -21,15 +21,16 @@
  *
  */
 
-#include "linuxMSTPFunctions.h"
+#include "CIBuildSettings.h"
 #include "composeStream.h"
+#include "linuxMSTPFunctions.h"
 #include <fstream>
 #include <iomanip> // std::setw
 #include <iostream> // std::cout, std::ios
 #include <stdio.h>
 #include <string.h> // strlen
 
-static const char* APPLICATION_VERSION_MAJOR = "0.0.0.1";
+static const char* APPLICATION_VERSION = "0.0.2";
 static const char* DEFAULT_SERIAL_PORT = "/dev/ttyS1";
 static const uint32_t DEFAULT_SERIAL_BAUDRATE = 38400;
 static const char* CONFIGURATION_LOG_FILE = "log.txt";
@@ -51,7 +52,7 @@ void printHelp()
 
 int main(int argc, char** argv)
 {
-    std::cout << "FYI: High speed serail monitor. Version: " << APPLICATION_VERSION_MAJOR << std::endl;
+    std::cout << "FYI: High speed serail monitor. Version: " << APPLICATION_VERSION << "." << CI_PIPELINE_IID << std::endl;
 
     // Set up the output stream.
     ComposeStream outputStream;
