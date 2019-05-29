@@ -30,7 +30,7 @@
 #include <stdio.h>
 #include <string.h> // strlen
 
-static const char* APPLICATION_VERSION = "0.0.0";
+static const char* APPLICATION_VERSION = "0.0.2";
 static const char* DEFAULT_SERIAL_PORT = "/dev/ttyS1";
 static const uint32_t DEFAULT_SERIAL_BAUDRATE = 38400;
 static const char* CONFIGURATION_LOG_FILE = "log.txt";
