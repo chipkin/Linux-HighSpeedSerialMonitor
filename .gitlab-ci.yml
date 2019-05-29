@@ -19,9 +19,9 @@ Build Linux:
     - "gcc -v" 
     - "ls" 
     # Clean the project 
-    make clean  
+    - make clean  
   script:
     make all 
   artifacts:
     paths:
-      serialMonitor 
+      - serialMonitor 
